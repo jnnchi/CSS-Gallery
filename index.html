@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS Project Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Space+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="parent">
+  <h1>WELCOME TO CSS</h1>
+  <!-- This sticky navbar only works when the parent covers the whole page -->
+  <nav>
+    <button><a href="#Robot">View Our Robots</a></button>
+    <button><a href="#Events">View Our Events</a></button>
+    <button><a href="#Videos">View More</a></button>
+  </nav>
+  
+  
+
+  <!----------------- ROBOTS ----------------->
+  <section class="rob-gallery" id="Robot">
+    <h2>OUR <span>ROBOTS</span>!</h2>
+    
+    <!-- TANK POPUP WINDOW -------->
+    <div id="tankModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>In the second class of the CS track, Programming With A Purpose Honors, students work in teams to build and program a tank robot to run autonomously, using modules such as Flask and OpenCV.</p>
+      </div>
+    </div>
+    <!-- QBOT POPUP WINDOW -------->
+    <div id="qbotModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>In the first class of the CS track, Computer Science Essentials Honors, students learn object oriented programming in C and Python, and use C and Arduino to program a qBot to perform tasks like completing a maze using sensors or running a set obstacle course.</p>
+      </div>
+    </div>
+    
+    <!-- ROBOT ROW 1 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/rob-clubfair2.jpg" class="image">
+          <div class="overlay">
+            <div class="text">
+              Mr. Rivero's tank robot at club fair 2021!
+              <button id="Popbtn" class="popup-btn" onclick="showModal('tankModal')">learn more about our tanks!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/rob-csfair.JPG" class="image">
+          <div class="overlay">
+            <div class="text">
+              A student-built robot is run on a web UI using flask.
+              <button id="Popbtn" class="popup-btn" onclick="showModal('tankModal')">learn more about our tanks!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/rob-clubfair.jpg" class="image">
+          <div class="overlay">
+            <div class="text">
+              President Alizain shows off a tank robot at club fair!
+              <button id="Popbtn" class="popup-btn" onclick="showModal('tankModal')">learn more about our tanks!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ROBOT ROW 2 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/qbot-kiss.JPG" class="image">
+          <div class="overlay">
+            <div class="text">Two qBots run into each other while autonomously completing a maze!
+              <button id="Popbtn" class="popup-btn" onclick="showModal('qbotModal')">learn more about our qBots!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/qbot-corner.JPG" class="image">
+          <div class="overlay">
+            <div class="text">A qBot turns a corner because it detects a wall.
+              <button id="Popbtn" class="popup-btn" onclick="showModal('qbotModal')">learn more about our qBots!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/qbot-crash.JPG" class="image">
+          <div class="overlay">
+            <div class="text">Two qBots turning the same corner... what's going to happen?
+              <button id="Popbtn" class="popup-btn" onclick="showModal('qbotModal')">learn more about our qBots!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ROBOT ROW 3 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/qbot-charge.JPG" class="image">
+          <div class="overlay">
+            <div class="text">A qBot in resting mode (recharging for the day!)
+              <button id="Popbtn" class="popup-btn" onclick="showModal('qbotModal')">learn more about our qBots!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/rob-csfair2.JPG" class="image">
+          <div class="overlay">
+            <div class="text">A robot in action during CS fair 2022!
+              <button id="Popbtn" class="popup-btn" onclick="showModal('tankModal')">learn more about our tanks!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/qbot-off.JPG" class="image">
+          <div class="overlay">
+            <div class="text">A qBot stares into the distance, unattended.
+              <button id="Popbtn" class="popup-btn" onclick="showModal('qbotModal')">learn more about our qBots!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ROBOT ROW 4 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/qbot-right.JPG" class="image">
+          <div class="overlay">
+            <div class="text">A qBot gets ready to round a corner, detecting a wall to its right.
+              <button id="Popbtn" class="popup-btn" onclick="showModal('qbotModal')">learn more about our qBots!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/rob-green.jpg" class="image">
+          <div class="overlay">
+            <div class="text">A robot getting ready to run in the Programming With a Purpose Class!
+              <button id="Popbtn" class="popup-btn" onclick="showModal('tankModal')">learn more about our tanks!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/rob-orange.jpg" class="image">
+          <div class="overlay">
+            <div class="text">A robot about to complete a maze!
+              <button id="Popbtn" class="popup-btn" onclick="showModal('tankModal')">learn more about our tanks!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ROBOT ROW 5 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/christmas.jpg" class="image">
+          <div class="overlay">
+            <div class="text">One team celebrates Christmas with their robot in PWP!
+              <button id="Popbtn" class="popup-btn" onclick="showModal('tankModal')">learn more about our tanks!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/qbot-friends.JPG" class="image">
+          <div class="overlay">
+            <div class="text">Two qBots discussing flaws in their Arduino code... someone missed a semicolon!
+              <button id="Popbtn" class="popup-btn" onclick="showModal('qbotModal')">learn more about our qBots!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/rob-rainbow.jpg" class="image">
+          <div class="overlay">
+            <div class="text">One team programmed their robot to also connect to and turn on LED lights!
+              <button id="Popbtn" class="popup-btn" onclick="showModal('tankModal')">learn more about our tanks!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ROBOT ROW 6 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/qbot-finish.JPG" class="image">
+          <div class="overlay">
+            <div class="text">A qBot successfully finishes a maze using its sensors to detect the walls.
+              <button id="Popbtn" class="popup-btn" onclick="showModal('qbotModal')">learn more about our qBots!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/qbot-clubfair.jpg" class="image">
+          <div class="overlay">
+            <div class="text">A resting qBot at club fair.
+              <button id="Popbtn" class="popup-btn" onclick="showModal('qbotModal')">learn more about our qBots!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/qbot-stop.JPG" class="image">
+          <div class="overlay">
+            <div class="text">A qBot detects a wall in front of it and prepares to turn around.
+              <button id="Popbtn" class="popup-btn" onclick="showModal('qbotModal')">learn more about our qBots!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="event-gallery" id="Events">
+    <h2>OUR <span>EVENTS</span>!</h2>
+    <!-- ROW 1 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/clubf-1.jpg" class="image">
+          <div class="overlay">
+            <div class="text">
+              Our 2021 club fair board!
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/csf-1.JPG" class="image">
+          <div class="overlay">
+            <div class="text">
+              Students set up their individual projects at our annual CS fair in 2022!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/csf-5.JPG" class="image">
+          <div class="overlay">
+            <div class="text">
+              A student introduces his project: a graphical node visualizer!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ROW 2 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/nlp-1.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Members all make their own chatbots at a student-led workshop on natural language processing.</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/csf-digitrec.JPG" class="image">
+          <div class="overlay">
+            <div class="text">In the senior-level AI class, students build a machine learning algorithm to recognize handwritten numbers!</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/qbot-arduino.JPG" class="image">
+          <div class="overlay">
+            <div class="text">We set up our qBots using C and Arduino in preparation for club fair 2021!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ROW 3 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/kahoot-2.jpg" class="image">
+          <div class="overlay">
+            <div class="text">A kahoot game during a meeting gets heated!</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/harvard-1.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Harvard professor Ronald Simmons shows us the tech behind an AR digital playground!</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/pygame-2.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Students follow along to build a game using the python PyGame module during a student-led workshop!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ROW 4 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/csf-pwp.JPG" class="image">
+          <div class="overlay">
+            <div class="text">In programming with a purpose, students build a web UI that allows users to control the tank robot and see the world through its camera!</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/csf-emotion.JPG" class="image">
+          <div class="overlay">
+            <div class="text">A student uses facial recognition to build a machine learning algorithm that analyzes users' facial expressions!</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/rob-csfair3.JPG" class="image">
+          <div class="overlay">
+            <div class="text">A programming with a purpose student demonstrates his web UI!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ROW 5 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/csf-hat.JPG" class="image">
+          <div class="overlay">
+            <div class="text">An AP Computer Science Principles student shows off her Harry Potter quiz game!</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/gamedev.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Students learn about the basics of game dev in a student-led workshop in partnership with the Game Development Club!</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/csf-4.JPG" class="image">
+          <div class="overlay">
+            <div class="text">A student showcases a complex project he made for a hackathon!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ROW 7 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/hackathon.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Students listen intently during a presentation about hackathons and project ideas!</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/kahoot-1.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Students playfully compare their knowledge of computer science facts in a kahoot game!</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/harvard-2.jpg" class="image">
+          <div class="overlay">
+            <div class="text">We fill up the theater along with Pre-Engineering Society to listen to Professor Ronald Simmons, a guest speaker from Harvard!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ROW 6 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/clubf-2.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Our club fair board again! Inception!!</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/csf-3.JPG" class="image">
+          <div class="overlay">
+            <div class="text">Students gather around a particularly intersting project at the CS fair 2022!</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="gallery-imgs/volunteer.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Our "Geek Squad" volunteering group helps parents navigate the Magnus app in preparation for the 2021-2022 school year!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE -------------------->
+  <section class="event-gallery" id="Videos">
+    <h2>MORE <span>CONTENT</span>!</h2>
+    <!-- ROW 1 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <!-- spinning together -->
+          <iframe src="https://drive.google.com/file/d/1BETFBtXMJWjF-s8cFT7uHOcsPXh1h_-v/preview" width="640" height="480" allow="autoplay" class="video"></iframe>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <!-- follow our instagram -->
+          <iframe loading="lazy" src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFL86GAJx0&#x2F;watch?embed" allowfullscreen="allowfullscreen" class="video" allow="fullscreen"></iframe>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <!-- queens straight line -->
+          <iframe src="https://drive.google.com/file/d/1ceJH9AWOyEbhh9R4kGe2x7JxT1wFhAQF/preview" width="640" height="480" allow="autoplay" class="video"></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- ROW 2 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <!-- gold chasing in circle -->
+          <iframe src="https://drive.google.com/file/d/1Omxwy_eotIsUUXjUcy_TEPRgpRknd0Mc/preview" width="640" height="480" allow="autoplay" class="video"></iframe>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <!-- CSS demo video -->
+          <iframe src="https://drive.google.com/file/d/14ryQ5l7BcwCHrRCRP4t37poAmafzNxIH/preview" width="640" height="480" allow="autoplay" class="video"></iframe>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <!-- green turn slomo -->
+          <iframe src="https://drive.google.com/file/d/1NcgxjzMRxbGwKNV6f3b6lkj1pF1Gwws1/preview" width="640" height="480" allow="autoplay" class="video"></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- ROW 3 -->
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <!-- bobo slomo crash into camera -->
+          <iframe src="https://drive.google.com/file/d/1NRcLM3deWlXFzWMSvB_j9JWrSX4c-cjI/preview" width="640" height="480" allow="autoplay" class="video"></iframe>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <!-- 2021 quarter 1 recap -->
+        <iframe loading="lazy" class="video" src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFL829sp1A&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <!-- qbot does maze! -->
+          <iframe src="https://drive.google.com/file/d/1uHEF2kMi4eRenb0pzDnqFj_8hNxpxniR/preview" width="640" height="480" allow="autoplay" class="video"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  </div>
+</body>
+
+</html>
